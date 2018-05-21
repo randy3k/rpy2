@@ -3,7 +3,7 @@ language: python
 python: 2.7
 
 before_install:
-  - pip install mercurial
+  - pip install mercurial==v4.2.2
   - mkdir -p ~/.local/bin
   - curl -o ~/.local/bin/git-remote-hg -L https://raw.githubusercontent.com/felipec/git-remote-hg/master/git-remote-hg
   - chmod +x ~/.local/bin/git-remote-hg
