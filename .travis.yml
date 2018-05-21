@@ -9,6 +9,7 @@ before_install:
   - chmod +x ~/.local/bin/git-remote-hg
 
 script:
+  - cd $HOME
   - git clone hg::https://bitbucket.org/rpy2/rpy2
   - cd rpy2
   - git remote add randy3k https://randy3k:$GHTOKEN@github.com/randy3k/rpy2.git
